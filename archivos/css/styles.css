@@ -95,8 +95,10 @@ li a.active, li a:hover{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: .5s;
+    /*    transition: .5s;*/
 }
+
+
 
 .contenedor{
     width: 95%;
@@ -294,7 +296,7 @@ a{
 
 .grid-container:hover{
     filter: opacity(0.9);
-    transform: scale(1.09);
+    /*transform: scale(1.09);*/
 }
 
 .grid-container{
@@ -565,7 +567,7 @@ a{
 .contenedor-inferior .iconos-listo .icono h4{
     font-size: 2rem;
     color: #eee;
-    transition: .2s;
+    /*transition: .2s;*/
 }
 
 .icono p{
