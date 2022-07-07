@@ -294,7 +294,7 @@ a{
 
 .grid-container:hover{
     filter: opacity(0.9);
-    transform: scale(1.09);
+    transform: scale (1.09);
 }
 
 .grid-container{
