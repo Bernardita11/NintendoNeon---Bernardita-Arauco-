@@ -295,6 +295,7 @@ a{
 
 .grid-container:hover{
     filter: opacity(0.9);
+    transition: .5s;
 }
 
 .grid-container{
@@ -739,4 +740,111 @@ nav .nav__hero{
 footer .footer{
     display: grid;
 }
+
+/* LOGIN.html */
+
+:root {
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --ligth: #ffffff;
+}
+
+.login{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--ligth);
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+.bg-dark-x{
+    background-color: var(--dark-x);
+}
+
+.form-control, .btn{
+    min-height: 4.125rem;
+    line-height: initial;
+}
+
+.img-1{
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2{
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3{
+    background-size: cover;
+    background-position: center;
+}
+
+/* REGISTRO.html*/
+
+:root {
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+
+.registro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 4rem 7rem;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+
+.form-control {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+.register-bg {
+    background-image: url('../img/pikachuportada.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
+
+
+
 
