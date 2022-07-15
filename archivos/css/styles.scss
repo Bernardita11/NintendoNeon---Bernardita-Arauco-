@@ -256,6 +256,7 @@ a{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* iconos */
 
 /* anuncios */
@@ -407,6 +408,7 @@ a{
     object-fit: cover;
     border-radius: inherit;
 }
+
 /* modelo oled */
 
 /* footer */
@@ -574,6 +576,7 @@ a{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* nosotras.html */
 
 
@@ -876,10 +879,7 @@ footer .footer{
 }
 
 .txt-primary {
-    background: linear-gradient(to right, #ff00f2, #39c7ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #f86032;
 }
 
 .txt-gray {
@@ -892,57 +892,67 @@ footer .footer{
 }
 
 .bk{
-    background: url('../img/portadamariokart-8');
+    background: url('../img/portadamariokart-8.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     height: 100vh;
 }
 
-.contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-form {
+.form {
     padding: 60px;
-    background: #fff;
-    color: #4d4d4d;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-} 
-
-input {
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input {
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
-        border: 1px solid #fff;
-        background: #f86032;
-        color: #fff;
+    }
 }
 
 .form-ln-gray {
+    @extend %form;
+    input {
         border: 0;
         border-bottom: 2px solid #c4c4c4;
+    }
 }
 
-.form-sq-wh ::placeholder {
+.form-sq-wh {
+    @extend %form;
+    input {
+        border: 1px solid #fff;
+        background: linear-gradient(to right, #00d0ff, #ff00cc, #bd39ff);
         color: #fff;
+    }
+    ::placeholder {
+        color: #fff;
+    }
 }
 
 .contacto {
     color: #fff;
-}
-
-.contacto-form {
-    background: linear-gradient(to right, #00d0ff, #ff00cc, #bd39ff);
-    text-align: center;
-    border-radius: 5px;
-    width: 50%;
-    padding: 60px;
-    display: block;
-    margin: 0 auto;
-}
-
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .contacto-form {
+        background: linear-gradient(to right, #00d0ff, #ff00cc, #bd39ff);
+        text-align: center;
+        border-radius: 5px;
+        width: 50%;
+        padding: 60px;
+        display: block;
+        margin: 0 auto;
+    h3 {
+        text-transform: capitalize;
+    }
+    form {
+        button {
+            width: 100%;
+            }
+        } 
+    } 
+} 
